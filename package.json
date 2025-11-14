@@ -46,10 +46,10 @@
       "import": "./dist/appointment-dialog-tab.js",
       "require": "./dist/appointment-dialog-tab.js"
     },
-    "./appointment-dialog-details": {
-      "types": "./dist/appointment-dialog-details.d.ts",
-      "import": "./dist/appointment-dialog-details.js",
-      "require": "./dist/appointment-dialog-details.js"
+    "./appointment-dialog-detail": {
+      "types": "./dist/appointment-dialog-detail.d.ts",
+      "import": "./dist/appointment-dialog-detail.js",
+      "require": "./dist/appointment-dialog-detail.js"
     },
     "./finance-tab": {
       "types": "./dist/finance-tab.d.ts",
