@@ -1,0 +1,73 @@
+{
+  "name": "@churchtools/extension-points",
+  "version": "0.0.1",
+  "description": "TypeScript type definitions for ChurchTools extension points",
+  "keywords": [
+    "churchtools",
+    "extension",
+    "types",
+    "typescript",
+    "extension-points"
+  ],
+  "author": {
+    "name": "ChurchTools Innovations GmbH",
+    "email": "extensions@churchtools.de",
+    "url": "https://church.tools"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/churchtools/churchtools-extension-points.git"
+  },
+  "homepage": "https://github.com/churchtools/churchtools-extension-points#readme",
+  "bugs": {
+    "url": "https://github.com/churchtools/churchtools-extension-points/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./main": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.js"
+    },
+    "./admin": {
+      "types": "./dist/admin.d.ts",
+      "import": "./dist/admin.js",
+      "require": "./dist/admin.js"
+    },
+    "./appointment-dialog-tab": {
+      "types": "./dist/appointment-dialog-tab.d.ts",
+      "import": "./dist/appointment-dialog-tab.js",
+      "require": "./dist/appointment-dialog-tab.js"
+    },
+    "./appointment-dialog-details": {
+      "types": "./dist/appointment-dialog-details.d.ts",
+      "import": "./dist/appointment-dialog-details.js",
+      "require": "./dist/appointment-dialog-details.js"
+    },
+    "./finance-tab": {
+      "types": "./dist/finance-tab.d.ts",
+      "import": "./dist/finance-tab.js",
+      "require": "./dist/finance-tab.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
