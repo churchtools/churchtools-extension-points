@@ -63,4 +63,14 @@ export type AdminContract = {
     events: AdminEvents;
     emits: AdminEmits;
 };
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export declare const AdminMetadata: {
+    /** Extension point ID */
+    readonly id: "admin";
+    /** Event names from ChurchTools to extension (keys from AdminEvents) */
+    readonly eventNames: readonly [];
+};
 //# sourceMappingURL=admin.d.ts.map

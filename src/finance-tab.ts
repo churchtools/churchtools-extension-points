@@ -56,3 +56,14 @@ export type FinanceTabContract = {
     events: FinanceTabEvents;
     emits: FinanceTabEmits;
 };
+
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export const FinanceTabMetadata = {
+    /** Extension point ID */
+    id: 'finance-tab',
+    /** Event names from ChurchTools to extension (keys from FinanceTabEvents) */
+    eventNames: ['accountingPeriod:changed', 'tab:hidden'] as const,
+} as const;

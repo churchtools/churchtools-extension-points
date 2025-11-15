@@ -47,4 +47,14 @@ export type MainModuleContract = {
     events: MainModuleEvents;
     emits: MainModuleEmits;
 };
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export declare const MainModuleMetadata: {
+    /** Extension point ID */
+    readonly id: "main";
+    /** Event names from ChurchTools to extension (keys from MainModuleEvents) */
+    readonly eventNames: readonly [];
+};
 //# sourceMappingURL=main.d.ts.map

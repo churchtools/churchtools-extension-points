@@ -6,4 +6,13 @@
  *
  * This file defines the contract for the main module extension point.
  */
-export {};
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export const MainModuleMetadata = {
+    /** Extension point ID */
+    id: 'main',
+    /** Event names from ChurchTools to extension (keys from MainModuleEvents) */
+    eventNames: [], // No events defined for main module
+};

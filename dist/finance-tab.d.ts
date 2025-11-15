@@ -55,4 +55,14 @@ export type FinanceTabContract = {
     events: FinanceTabEvents;
     emits: FinanceTabEmits;
 };
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export declare const FinanceTabMetadata: {
+    /** Extension point ID */
+    readonly id: "finance-tab";
+    /** Event names from ChurchTools to extension (keys from FinanceTabEvents) */
+    readonly eventNames: readonly ["accountingPeriod:changed", "tab:hidden"];
+};
 //# sourceMappingURL=finance-tab.d.ts.map

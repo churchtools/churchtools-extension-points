@@ -57,4 +57,14 @@ export type AppointmentDialogDetailContract = {
     events: AppointmentDialogDetailEvents;
     emits: AppointmentDialogDetailEmits;
 };
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export declare const AppointmentDialogDetailMetadata: {
+    /** Extension point ID */
+    readonly id: "appointment-dialog-detail";
+    /** Event names from ChurchTools to extension (keys from AppointmentDialogDetailEvents) */
+    readonly eventNames: readonly ["appointment:changed", "dialog:closing"];
+};
 //# sourceMappingURL=appointment-dialog-detail.d.ts.map

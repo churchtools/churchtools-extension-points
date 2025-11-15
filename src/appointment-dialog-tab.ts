@@ -62,3 +62,14 @@ export type AppointmentDialogTabContract = {
     events: AppointmentDialogTabEvents;
     emits: AppointmentDialogTabEmits;
 };
+
+/**
+ * Runtime metadata for testing and development
+ * Contains event names that can be sent FROM ChurchTools TO the extension
+ */
+export const AppointmentDialogTabMetadata = {
+    /** Extension point ID */
+    id: 'appointment-dialog-tab',
+    /** Event names from ChurchTools to extension (keys from AppointmentDialogTabEvents) */
+    eventNames: ['appointment:changed', 'dialog:closing'] as const,
+} as const;
