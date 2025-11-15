@@ -10,15 +10,6 @@
  * Data provided by ChurchTools for main module extension
  */
 export interface MainModuleData {
-    /** Current user ID */
-    userId: number;
-    /** Additional context data */
-    context?: {
-        /** Module parameters from URL */
-        params?: Record<string, string>;
-        /** Navigation state */
-        route?: string;
-    };
 }
 /**
  * Events FROM ChurchTools

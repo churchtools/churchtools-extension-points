@@ -26,15 +26,6 @@ export interface AdminData {
             email?: string;
         };
     };
-    /** Admin user info */
-    adminUser?: {
-        /** User ID */
-        userId: number;
-        /** User name */
-        name: string;
-        /** User permissions */
-        permissions: string[];
-    };
 }
 /**
  * Events FROM ChurchTools
